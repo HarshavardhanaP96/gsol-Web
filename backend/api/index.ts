@@ -42,8 +42,10 @@ app.use('/',(req:Request, res:Response)=>{
     })
 })
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
-app.post('/contact', async (req: Request, res: Response) => {
+
+app.post('/api/contact', async (req: Request, res: Response) => {
   const result = User.safeParse(req.body);
 
   if (!result.success) {
@@ -77,3 +79,5 @@ app.post('/contact', async (req: Request, res: Response) => {
     console.error(error);
   }
 });
+
+module.exports=app;
