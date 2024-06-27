@@ -79,5 +79,3 @@ app.post('/api/contact', async (req: Request, res: Response) => {
     console.error(error);
   }
 });
-
-module.exports=app;
