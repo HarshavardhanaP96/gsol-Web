@@ -2,6 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "prisma": {
+    "schema": "./db/prisma/schema.prisma"
+  },
   "scripts": {
     "build": "npm install && npx prisma generate && npm run migrate && tsc",
     "migrate": "npx prisma migrate deploy",
