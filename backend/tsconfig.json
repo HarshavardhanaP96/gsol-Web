@@ -10,7 +10,5 @@
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
     "sourceMap": true
   },
-  "include": [
-    "api/**/*"                              // Include all TypeScript files in the `api` directory
-  ]
+
 }
