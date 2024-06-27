@@ -12,8 +12,8 @@ const prisma = new PrismaClient();
 app.use(bodyParser.json());
 app.use(cors())
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(5000, () => {
+  console.log("Server is running on port 5000");
 });
 
 const User = z.object({
@@ -36,11 +36,11 @@ const corsOptions={
 app.use(cors(corsOptions));
 
 //test
-app.use('/',(req:Request, res:Response)=>{
-    res.json({
-        message:"hello from express app"
-    })
-})
+// app.use('/',(req:Request, res:Response)=>{
+//     res.json({
+//         message:"hello from express app"
+//     })
+// })
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
