@@ -42,7 +42,7 @@ app.use(cors(corsOptions));
 //     })
 // })
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req:Request, res:Response) => res.send("Express on Vercel"));
 
 
 app.post('/api/contact', async (req: Request, res: Response) => {
